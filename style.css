@@ -203,15 +203,6 @@ header {
     margin: 3%;
 }
 
-@media screen and (min-width: 1200px) {
-    .menu {
-        height: 60px;
-    }
-    .menu img {
-        display: none;
-    }
-}
-
 main {
     width: 100vw;
     height: 100vh;
@@ -227,40 +218,6 @@ main {
     display: flex;
     align-items: center;
     flex-direction: column;
-}
-
-@media screen and (min-width: 1200px) {
-    .conteneur .logo {
-        display: none;
-    }
-    .conteneur {
-        height: 100vh;
-        background-image: url("/Applications/MAMP/htdocs/Projet_asso_v1/assets/img/background2.png");
-        width: 100%;
-    }
-    .conteneur .main-title {
-        font-size: 70px;
-        font-weight: bold;
-        font-family: Roboto;
-        margin-left: 25%;
-        padding-top: 30px;
-    }
-    .conteneur h1 {
-        font-size: 40px;
-        padding-top: 25px;
-        margin-left: 25%;
-    }
-    .text-js {
-        font-size: 30px;
-        margin-left: 20%;
-        padding-top: 25px;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    .conteneur h1 {
-        display: none;
-    }
 }
 
 .conteneur h1 {
@@ -282,10 +239,6 @@ main {
 .btns {
     display: flex;
     margin-top: 3em;
-}
-
-@media screen and (max-width: 1200px) {
-    .btns {}
 }
 
 .participer,
@@ -363,8 +316,4 @@ main {
     width: 3em;
     border-radius: 50%;
     margin-top: 0.6em;
-}
-
-@media screen and (min-width: 1200px) {
-    .carrou {}
 }

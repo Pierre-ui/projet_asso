@@ -1,0 +1,174 @@
+@media screen and (min-wodth: 1200px) {
+    body {
+        background-color: #005C75;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .menu {
+        display: none;
+    }
+    header {
+        height: 60px;
+    }
+    .topbar {
+        font-family: Roboto, sans-serif;
+        font-size: 12px;
+        color: #fff;
+        background: #fff;
+        height: 20px;
+        border-right: 3px solid #fff;
+        border-left: 3px solid #fff;
+    }
+    .topbar a {
+        color: inherit;
+        text-decoration: none;
+    }
+    .topbar ul {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .topbar li {
+        padding: 0 8px;
+    }
+    .topbar li,
+    .topbar a {
+        display: flex;
+        align-items: center;
+        height: 40px;
+        transition: color .3s;
+    }
+    .topbar .topbar-right {
+        margin-left: auto;
+    }
+    /*.topbar-info {
+        background-color: ;
+    }*/
+    .topbar-info img {
+        height: 20px;
+        object-fit: fill;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .topbar {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .chrono {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: column;
+        position: absolute;
+        z-index: 2;
+        background-color: #FA8232;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        top: -200px;
+        right: -80px;
+    }
+    .start,
+    .start_chrono,
+    .start_j {
+        color: white;
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .start_j {
+        margin-top: 10px;
+    }
+    .start,
+    .start_content {
+        margin-right: 12px;
+    }
+    .start_content {
+        display: flex;
+    }
+    .start_chrono {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .menu {
+        height: 60px;
+    }
+    .menu img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .logo-responsive {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .logo-responsive {
+        background-color: #fff;
+    }
+    .logo-raid {
+        padding-top: 0px;
+        z-index: 2;
+    }
+    .logo-raid img {
+        object-fit: cover;
+        height: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .conteneur .logo {
+        display: none;
+    }
+    .conteneur {
+        height: 100vh;
+        background-image: url("/Applications/MAMP/htdocs/Projet_asso_v1/assets/img/background2.png");
+        width: 100%;
+    }
+    .conteneur .main-title {
+        font-size: 70px;
+        font-weight: bold;
+        font-family: Roboto;
+        margin-left: 25%;
+        padding-top: 30px;
+    }
+    .conteneur h1 {
+        font-size: 40px;
+        padding-top: 25px;
+        margin-left: 25%;
+    }
+    .text-js {
+        font-size: 30px;
+        margin-left: 22%;
+        padding-top: 25px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .conteneur h1 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .bandeau {
+        background-color: #005C75;
+        height: 30px;
+        widows: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .carrou {
+        width: 100%;
+        margin-top: 100px;
+        padding: 0 0 0 0;
+    }
+}
