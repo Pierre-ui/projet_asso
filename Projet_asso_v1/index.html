@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="/Applications/MAMP/htdocs/Projet_asso_v1/assets/responsive.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <title>EUROP'RAID</title>
+</head>
+
+<body>
+    <main>
+        <div class="chrono">
+            <p class="start">
+                Départ dans:
+            </p>
+            <div class="start_content">
+                <h2 class="start_chrono">
+                    151
+                </h2>
+                <p class="start_j">
+                    jours
+                </p>
+            </div>
+        </div>
+    </main>
+    <header>
+        <div class="topbar-container">
+            <img src="assets/img/logo_horizontal.png" alt="logo europ'raid">
+        </div>
+        <div class="menu">
+            <img class="img_menu" src="assets/img/list.png" alt="menu_btn">
+        </div>
+    </header>
+    <div class="conteneur">
+        <h1 class="main-title">EUROP'RAID</h1>
+        <img class="logo" src="assets/img/logo_europraid.png" alt="Europraid">
+        <h1>Premier raid aventure en Europe</h1>
+        <h2 class="text-js"><span id="typed"></span></h2>
+        <div class="btns">
+            <button class="participer">
+                <h3>Participer</h3>
+            </button>
+            <button class="suivre">
+                <h3 class="title_btn">Suivre</h3>
+            </button>
+        </div>
+        <div class="social">
+            <button class="facebook">
+                <img src="assets/img/Groupe_31.png" alt="facebook">
+            </button>
+            <button class="twitter">
+                <img src="assets/img/Groupe_30.png" alt="twitter">
+            </button>
+            <button class="instagram">
+                <img  src="assets/img/Groupe_29.png" alt="instagram">
+            </button>
+        </div>
+        <div class="carrou">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="2000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-interval="500">
+                        <img class="d-block w-100" src="assets/img/beauvais.png" alt="Sponso1">
+                    </div>
+                    <div class="carousel-item" data-interval="500">
+                        <img class="d-block w-100" src="assets/img/clara.png" alt="Sponso2">
+                    </div>
+                    <div class="carousel-item" data-interval="500">
+                        <img class="d-block w-100" src="assets/img/CA.png" alt="Sponso3">
+                    </div>
+                    <div class="carousel-item" data-interval="500">
+                        <img class="d-block w-100" src="/Applications/MAMP/htdocs/Projet_asso_v1/assets/img/BriacÇ.png" alt="Sponso3">
+                    </div>
+                    <div class="carousel-item" data-interval="500">
+                        <img class="d-block w-100" src="assets/img/Lion.png" alt="Sponso3">
+                    </div>
+                    <div class="carousel-item" data-interval="500">
+                        <img class="d-block w-100" src="assets/img/pont-chateau.png" alt="Sponso3">
+                    </div>
+                    <div class="carousel-item" data-interval="500">
+                        <img class="d-block w-100" src="/Applications/MAMP/htdocs/Projet_asso_v1/assets/img/rochesuryon.png" alt="Sponso3">
+                    </div>
+                    <div class="carousel-item" data-interval="500">
+                        <img class="d-block w-100" src="/Applications/MAMP/htdocs/Projet_asso_v1/assets/img/SuitÇtudes.png" alt="Sponso3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        $('.carousel').carousel({
+            interval: 0
+        })
+    </script>
+    <script>
+        var typed = new Typed('#typed', {
+            strings: ["France", "Belgique", "Pays-Bas", "Allemagne", "Tchéquie", "Pologne", "Slovaquie", "Hongrie", "Roumanie", "Bulgarie", "Macédoine du nord", "Grèce", "Albanie", "Monténégro", "Bosnie-Herzégovine", "Croatie", "Slovénie", "Autriche", "Italie", "Suisse"],
+            typeSpeed: 50,
+            backSpeed: 20,
+            loop: true
+        })
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

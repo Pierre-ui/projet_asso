@@ -1,0 +1,186 @@
+/* VARIABLES COULEURS */
+
+:root {
+    --color: #fff;
+    --background: #005C75;
+}
+
+
+/* FIN DES VARIABLES */
+
+@media screen and (min-wodth: 1200px) {
+    body {
+        background-color: #005C75;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .menu {
+        display: none;
+    }
+    header {
+        height: 60px;
+    }
+    .topbar {
+        font-family: Roboto, sans-serif;
+        font-size: 12px;
+        color: #fff;
+        background: #fff;
+        height: 20px;
+        border-right: 3px solid #fff;
+        border-left: 3px solid #fff;
+    }
+    .topbar a {
+        color: inherit;
+        text-decoration: none;
+    }
+    .topbar ul {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .topbar li {
+        padding: 0 8px;
+    }
+    .topbar li,
+    .topbar a {
+        display: flex;
+        align-items: center;
+        height: 40px;
+        transition: color .3s;
+    }
+    .topbar .topbar-right {
+        margin-left: auto;
+    }
+    .topbar-container img {
+        height: 60px;
+        width: 20%;
+        border: 1px solid #fff;
+        border-width: 3px;
+        border-right-style: inset;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .topbar {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .chrono {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: column;
+        position: absolute;
+        z-index: 2;
+        background-color: #FA8232;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        top: -200px;
+        right: -80px;
+    }
+    .start,
+    .start_chrono,
+    .start_j {
+        color: white;
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .start_j {
+        margin-top: 10px;
+    }
+    .start,
+    .start_content {
+        margin-right: 12px;
+    }
+    .start_content {
+        display: flex;
+    }
+    .start_chrono {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .menu {
+        height: 60px;
+    }
+    .menu img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .logo-responsive {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .logo-responsive {
+        background-color: #fff;
+    }
+    .logo-raid {
+        padding-top: 0px;
+        z-index: 2;
+    }
+    .logo-raid img {
+        object-fit: contain;
+        height: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .conteneur .logo {
+        display: none;
+    }
+    .conteneur {
+        height: 100vh;
+        background-image: url("/Applications/MAMP/htdocs/Projet_asso_v1/assets/img/background2.png");
+        background-position: 40% 80%;
+        width: 100%;
+        align-items: flex-start;
+    }
+    .conteneur .main-title {
+        font-size: 70px;
+        font-weight: bold;
+        font-family: Roboto;
+        margin-left: 50%;
+        padding-top: 30px;
+    }
+    .conteneur h1 {
+        font-size: 40px;
+        padding-top: 25px;
+        margin-left: 47%;
+    }
+    .text-js {
+        font-size: 30px;
+        margin-left: 60%;
+        padding-top: 25px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .conteneur h1 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .btns {
+        margin-left: 8em;
+        margin-top: 6em;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .carrou {
+        width: 30%;
+        margin-top: -70px;
+        margin-left: 30px;
+        height: 90px;
+    }
+}
