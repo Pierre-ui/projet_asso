@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/responsive.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="assets/countdown.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+
+</head>
+
+<body>
+    <main>
+        <div class="chrono">
+            <p class="start">
+                Départ dans:
+            </p>
+            <div class="start_content">
+                <h2 class="start_chrono">
+                    151
+                </h2>
+                <p class="start_j"><span id="countdown_day">jours</span></p>
+            </div>
+        </div>
+    </main>
+    <header>
+        <div class="topbar-container">
+            <img src="assets/img/logo_horizontal.png" alt="logo europ'raid">
+        </div>
+        <div class="menu">
+            <img class="img_menu" src="assets/img/list.png" alt="menu_btn">
+        </div>
+    </header>
+    <div class="conteneur">
+        <img class="logo" src="assets/img/logo_europraid.png" alt="Europraid">
+        <h1 class="main-title">EUROP'RAID</h1>
+        <h1>Premier raid aventure en Europe</h1>
+        <h2 class="text-js"><span id="typed"></span></h2>
+        <div class="btns">
+            <button class="participer">
+                <h3>Participer</h3>
+            </button>
+            <button class="suivre">
+                <h3 class="title_btn">Suivre</h3>
+            </button>
+        </div>
+        <div class="social">
+            <button class="facebook">
+                <img src="assets/img/Groupe_31.png" alt="facebook">
+            </button>
+            <button class="twitter">
+                <img src="assets/img/Groupe_30.png" alt="twitter">
+            </button>
+            <button class="instagram">
+                <img  src="assets/img/Groupe_29.png" alt="instagram">
+            </button>
+        </div>
+        <div class="carrou">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="2000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-interval="500">
+                        <img class="d-block w-100" src="assets/img/beauvais.png" alt="Sponso1">
+                    </div>
+                    <div class="carousel-item" data-interval="500">
+                        <img class="d-block w-100" src="assets/img/clara.png" alt="Sponso2">
+                    </div>
+                    <div class="carousel-item" data-interval="500">
+                        <img class="d-block w-100" src="assets/img/CA.png" alt="Sponso3">
+                    </div>
+                    <div class="carousel-item" data-interval="500">
+                        <img class="d-block w-100" src="assets/img/Briac€.png" alt="Sponso3">
+                    </div>
+                    <div class="carousel-item" data-interval="500">
+                        <img class="d-block w-100" src="assets/img/Lion.png" alt="Sponso3">
+                    </div>
+                    <div class="carousel-item" data-interval="500">
+                        <img class="d-block w-100" src="assets/img/pont-chateau.png" alt="Sponso3">
+                    </div>
+                    <div class="carousel-item" data-interval="500">
+                        <img class="d-block w-100" src="assets/img/rochesuryon.png" alt="Sponso3">
+                    </div>
+                    <div class="carousel-item" data-interval="500">
+                        <img class="d-block w-100" src="assets/img/Suit€tudes.png" alt="Sponso3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="avent">
+        <div class="avt-title">
+            <h2>Une aventure <br> humaine ...</h2>
+        </div>
+
+        <div class="triangles">
+            <div class="triangle1">
+                <p class="triangle1-content">Une action vers<br>les autres, une action de<br>rencontre mais aussi de partage<br>et de solidarité, l'union entre<br>aventure et solidarité.</p>
+            </div>
+        </div>
+
+        <div class="middle">
+            <div class="middle-content">
+                <a href=""><img class="middle-img" src="assets/img/compass.svg" alt="img"></a>
+                <a href=""><img class="middle-img" src="assets/img/support.svg" alt="img"></a>
+                <a href=""><img class="middle-img" src="assets/img/sedan.svg" alt="img"></a>
+            </div>
+        </div>
+
+        <div class="triangles2">
+            <div class="triangle2">
+                <p class="triangle2-content">Un tour d'Europe <br> de 10000km à travers 20 <br> pays en 22 jours. En Peugot 205 <br> les équipages redécouvrent <br> l'Europe.</p>
+            </div>
+        </div>
+
+        <div class="avt-end">
+            <h2>... à l'échelle<br>européenne</h2>
+        </div>
+
+    </div>
+    <div class="equipage">
+        <div class="equi-bar">
+            <div class="left-bar">
+                <h1 class="equipe">ÉQUIPAGES 2021</h1>
+            </div>
+            <div class="right-bar">
+                <h1 class="create">CRÉER ÉQUIPAGE</h1>
+            </div>
+        </div>
+        <div class="equi-top">
+            <h1>EQUIPAGES 2021</h1>
+            <a href="" class="voir">
+                <h3 class="title_btn">Voir plus</h3>
+            </a>
+        </div>
+        <div class="map">
+            <div id='map' style='width: 100vw; height: 35vh;'></div>
+        </div>
+        <div class="map2">
+            <div id='map' style='width: 20vw; height: 5vh;'></div>
+        </div>
+        <div class="equi-bot">
+            <div class="info-top">
+                <h4>366</h4>
+                <p>EQUIPAGES</p>
+            </div>
+            <div class="info-middle">
+                <h4>1098</h4>
+                <p>PARTICIPANTS</p>
+            </div>
+            <div class="equipages">
+                <img src="/Applications/MAMP/htdocs/Projet_asso_v5/assets/img/Image_7.png" alt="tableau des equipes">
+            </div>
+            <div class="info-bot">
+                <h4>366</h4>
+                <p>VOITURES</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="follow">
+        <div class="top-circle">
+            <h2>SUIVEZ-NOUS <br>#EUROPRAID</h2>
+        </div>
+        <div class="social-follow">
+            <a href="" class="facebook2">
+                <img src="assets/img/Groupe_31.png" alt="facebook">
+            </a>
+            <a href="" class="twitter2">
+                <img src="assets/img/Groupe_30.png" alt="twitter">
+            </a>
+            <a href="" class="instagram2">
+                <img src="assets/img/Groupe_29.png" alt="instagram">
+            </a>
+        </div>
+        <div class="carou-photo">
+            <div id="carou-photo" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner photovideo">
+                    <div class="carousel-item active">
+                        <a href=""><img class="image-carou" src="assets/img/photo1.png" alt="photo1"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href=""><img class="image-carou" src="assets/img/photo2.png" alt="photo2"></a>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carou-photo" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carou-photo" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="between">
+            <div class="between-center">
+                <a href="">Voir toutes les photos</a>
+            </div>
+        </div>
+
+        <div class="carou-video">
+            <div id="carou-video" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner photovideo">
+                    <div class="carousel-item active">
+                        <a href="https://www.youtube.com/watch?v=y1yWvVvh9bc" target="_blank"><img class="image-carou" src="assets/img/video1.png" alt="photo1"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://www.youtube.com/watch?v=lz3xyoKJMQE" target="_blank"><img class="image-carou" src="assets/img/video2.png" alt="photo2"></a>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carou-video" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carou-video" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="between-bottom">
+            <div class="between-bot">
+                <a href="">Voir toutes les vidéos</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="link">
+        <div class="link-top">
+            <div class="actu">
+                <div class="actu-left">
+                    <img class="circle" src="assets/img/img2.png" alt="photo">
+                    <div class="mail">
+                        <img src="assets/img/email.png" alt="email">
+                    </div>
+                </div>
+                <div class="actu-right">
+                    <p>Suivre l'actualité <br> s'abonner :</p>
+                    <a href="">GO</a>
+                </div>
+            </div>
+            <div class="parti">
+                <div class="parti-left">
+                    <p>Soif d'aventure ?<br> participer :</p>
+                    <a href="">GO</a>
+                </div>
+                <div class="parti-right">
+                    <img class="circle2" src="assets/img/img1.png" alt="photo">
+                </div>
+            </div>
+            <div class="boutique">
+                <div class="boutique-left">
+                    <img class="circle" src="assets/img/img3.png" alt="photo">
+                    <div class="news">
+                        <p>Nouveauté</p>
+                    </div>
+                </div>
+                <div class="boutique-right">
+                    <p>Boutique en ligne <br> découvrir :</p>
+                    <a href="">GO</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="logo-footer">
+                <img src="assets/img/logo_europraid.png" alt="logo-footer">
+            </div>
+            <div class="social-follow social-footer">
+                <a href="" class="facebook2">
+                    <img src="assets/img/Groupe_31.png" alt="facebook">
+                </a>
+                <a href="" class="twitter2">
+                    <img src="assets/img/Groupe_30.png" alt="twitter">
+                </a>
+                <a href="" class="instagram2">
+                    <img src="assets/img/Groupe_29.png" alt="instagram">
+                </a>
+            </div>
+            <div class="sponso-footer">
+                <img src="assets/img/roche.png" alt="Sponso1">
+                <img src="assets/img/beauv.png" alt="Sponso2">
+                <img src="assets/img/credit.png" alt="Sponso3">
+                <img src="assets/img/bria.png" alt="Sponso3">
+                <img src="assets/img/lion.webp" alt="Sponso3">
+                <img src="assets/img/clara.webp" alt="Sponso3">
+                <img src="assets/img/Suitetudes.png" alt="Sponso3">
+                <img src="assets/img/chateau.png" alt="Sponso3">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoibWF4aW1lYnJ4IiwiYSI6ImNrbTM3enR4ejA5M3kyeHA2OWtlbG85M3AifQ.3BfdR0uGVEqIXIpqnfxpSg';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/light-v10',
+            center: [3, 47],
+            zoom: 3.5,
+        });
+        var marker = new mapboxgl.Marker()
+            .setLngLat([1.075037, 49.382453])
+            .addTo(map);
+        var marker = new mapboxgl.Marker()
+            .setLngLat([2, 47])
+            .addTo(map);
+        var marker = new mapboxgl.Marker()
+            .setLngLat([3, 47])
+            .addTo(map);
+        var marker = new mapboxgl.Marker()
+            .setLngLat([3.43, 48])
+            .addTo(map);
+        var marker = new mapboxgl.Marker()
+            .setLngLat([5, 45])
+            .addTo(map);
+        var marker = new mapboxgl.Marker()
+            .setLngLat([4, 44])
+            .addTo(map);
+        var marker = new mapboxgl.Marker()
+            .setLngLat([6, 50])
+            .addTo(map);
+        var marker = new mapboxgl.Marker()
+            .setLngLat([0, 45])
+            .addTo(map);
+        map.addControl(new mapboxgl.NavigationControl());
+    </script>
+    <script>
+        $('.carousel').carousel({
+            interval: 0
+        })
+    </script>
+    <script>
+        var typed = new Typed('#typed', {
+            strings: ["France", "Belgique", "Pays-Bas", "Allemagne", "Tchéquie", "Pologne", "Slovaquie", "Hongrie", "Roumanie", "Bulgarie", "Macédoine du nord", "Grèce", "Albanie", "Monténégro", "Bosnie-Herzégovine", "Croatie", "Slovénie", "Autriche", "Italie", "Suisse"],
+            typeSpeed: 50,
+            backSpeed: 20,
+            loop: true
+        })
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
